@@ -136,7 +136,7 @@ src: url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
 .container {margin: 0 15px;}
 .featurette-divider {margin: 40px 0;}
 .featurette-heading {font-size: 25px;}
-.hero-subhead { font-size:28px; position:relative;}
+.hero-subhead { font-size:28px; position:relative; background-color:#fff;}
 
 }
 
