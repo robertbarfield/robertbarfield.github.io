@@ -1,0 +1,171 @@
+body { background-color: #300c54; font-family:arial;}
+
+@font-face {
+  font-family: 'Hero';
+  src: url('fonts/hero.eot'); /* IE9 Compat Modes */
+  src: url('fonts/hero.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/hero.woff') format('woff'), /* Modern Browsers */
+       url('fonts/hero.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/hero.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.header-image { position:relative; }
+.hero-img { width:100%; height:auto;vertical-align:top;}
+.hero-subhead { position:absolute;padding:0.25% 0;width:100%;bottom:0px;text-align:center;z-index:1;font-size:34px;color:#4e2a74;font-family:hero;background-image:url('../images/subhead-bkgrnd.png'); }
+
+.standard-button { background: #7dc241; border:none; color:#fff; font-size:16px;font-weight:normal;}
+
+h2 { font-family:hero; }
+
+.subscription-success, .subscription-error { display:none; }
+
+.subpage-head { font-size:34px;color:#4e2a74;font-family:hero; }
+.page-content { background-color:#fff; padding:12px 24px;color:#666;}
+
+.download {	background-color: #4e2a74; color: #ffffff;}
+
+.featurette-divider {
+	margin: 80px 0;
+}
+.featurette {
+	overflow: hidden;
+	text-align: center;
+	padding:20px 0 10px;
+}
+
+.featurette .lead { font-size:18px !important; }
+
+.featurette-heading {
+	font-size: 50px;
+}
+
+.form-inline .form-control { text-align:left !important; font-size:20px;}
+
+footer {
+	background-color: #300c54;
+	font-size:12px;
+	text-align:center;
+}
+footer .copyright {
+    color: #ffffff;
+    padding-top: 10px;
+	padding-left:25px;
+	padding-bottom: 10px;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+.social-icons li a:hover {
+    color: #7dc241;
+}
+.social-icons {
+font-family: 'ElegantIcons';
+src: url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+
+}
+
+.social-icons { padding:0px !important;}
+
+.social-icons li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.social-icons li a {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* RESPONSIVE CSS */
+
+@media (max-width: 1200px) {
+
+.headline > .container > h1 {font-size: 140px;}
+.headline > .container > h2 {font-size: 63px;}
+.featurette-divider {margin: 50px 0;}
+.featurette-image.pull-left {margin-right: 20px;}
+.featurette-image.pull-right {margin-left: 20px;}
+.featurette-heading {font-size: 35px;}
+
+}
+
+@media (max-width: 991px) {
+
+.headline > .container > h1 {font-size: 105px;}
+.headline > .container > h2 {font-size: 50px;}
+.featurette-divider {margin: 40px 0;}
+.featurette-image {max-width: 50%;}
+.featurette-image.pull-left {margin-right: 10px;}
+.featurette-image.pull-right {margin-left: 10px;}
+.featurette-heading {font-size: 30px;}
+.hero-subhead { font-size:32px; }
+}
+
+@media (max-width: 768px) {
+	
+.container {margin: 0 15px;}
+.featurette-divider {margin: 40px 0;}
+.featurette-heading {font-size: 25px;}
+.hero-subhead { font-size:28px; }
+}
+
+
+@media (max-width: 668px) {
+
+.headline > .container > h1 {font-size: 70px;}
+.headline > .container > h2 {font-size: 32px;}
+.featurette-divider {margin: 30px 0;}
+.hero-subhead { font-size:24px;}
+}
+
+@media (max-width: 640px) {
+
+.headline {padding: 75px 0 25px 0;}
+.headline > .container > h1 {font-size: 60px;}
+.headline > .container > h2 {font-size: 30px;}
+.hero-subhead { font-size:21px;}
+}
+
+@media (max-width: 475px) {
+
+.hero-subhead { font-size:17px;}
+}
+
+@media (max-width: 375px) {
+
+.featurette-divider {margin: 10px 0;}
+.featurette-image {max-width: 100%;}
+.featurette-image.pull-left {margin-right: 0; margin-bottom: 10px;}
+.featurette-image.pull-right {margin-left: 0; margin-bottom: 10px;}
+.hero-subhead { font-size:14px;}
+}
