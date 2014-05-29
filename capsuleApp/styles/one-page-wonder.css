@@ -155,13 +155,11 @@ src: url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
 .headline {padding: 75px 0 25px 0;}
 .headline > .container > h1 {font-size: 60px;}
 .headline > .container > h2 {font-size: 30px;}
-.hero-subhead { font-size:21px;}
 .standard-button { margin-top:12px; }
 }
 
 @media (max-width: 475px) {
 
-.hero-subhead { font-size:17px;}
 }
 
 @media (max-width: 375px) {
@@ -170,5 +168,5 @@ src: url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
 .featurette-image {max-width: 100%;}
 .featurette-image.pull-left {margin-right: 0; margin-bottom: 10px;}
 .featurette-image.pull-right {margin-left: 0; margin-bottom: 10px;}
-.hero-subhead { font-size:14px;}
+
 }
