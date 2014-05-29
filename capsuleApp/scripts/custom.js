@@ -2,28 +2,39 @@
 ===  MAILCHIMP                 ====
 =================================== */
 
-
-$('.mailchimp').submit(function (event) {
-	event.preventDefault();
-	$.ajax({
-        url : 'http://capsulethemoment.us8.list-manage.com/subscribe/post?u=4a49977d6364238e4cc80b2d1&amp;id=b7631a2a88',
-        type: 'POST',
-        success : mailchimpCallback,
-        error : mailchimpCallback
-    })
-
+$(document).ready( function () {
+    // I only have one form on the page but you can be more specific if need be.
+    var $form = $('form');
+    if ( $form.length > 0 ) {
+        $('form button[type="submit"]').bind('click', function ( event ) {
+            event.preventDefault();
+            register($form);
+        });
+    }
 });
 
-function mailchimpCallback(resp) {
-	$('#services button').hide();
-    $('#services input').hide();
-    
-    if (resp.result === 'success') {
-        $('.subscription-success').html('<i class="icon_check_alt2"></i><br/>' + resp.msg).fadeIn(1000);
-        $('.subscription-error').fadeOut(500);
-        
-    } else if(resp.result === 'error') {
-        $('.subscription-error').html('<i class="icon_close_alt2"></i><br/>' + resp.msg).fadeIn(1000);
-    }
-    
+function register($form) {
+	
+	$('form input').hide();
+	$('form button').hide();
+	
+	console.log($form);
+	
+    $.ajax({
+        type: $form.attr('method'),
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        cache       : false,
+        dataType    : 'json',
+        contentType: "application/json; charset=utf-8",
+        error       : function(err) { $('.subscription-error').fadeIn(1000); },
+        success     : function(data) {
+            if (data.result != "success") {
+                $('.subscription-error').fadeIn(1000);
+            } else {
+                $('.subscription-success').fadeIn(1000);
+        		$('.subscription-error').fadeOut(500);
+            }
+        }
+    });
 }
