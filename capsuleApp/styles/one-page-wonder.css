@@ -11,7 +11,7 @@ body { background-color: #300c54; font-family:arial;}
 
 .header-image { position:relative; }
 .hero-img { width:100%; height:auto;vertical-align:top;}
-.hero-subhead { position:absolute;padding:0.25% 0;width:100%;bottom:0px;text-align:center;z-index:1;font-size:34px;color:#4e2a74;font-family:hero;background-image:url('../images/subhead-bkgrnd.png'); }
+.hero-subhead { position:absolute;padding:0.25% 12px;width:100%;bottom:0px;text-align:center;z-index:1;font-size:34px;color:#4e2a74;font-family:hero;background-image:url('../images/subhead-bkgrnd.png'); }
 
 .standard-button { background: #7dc241; border:none; color:#fff; font-size:16px;font-weight:normal;}
 
