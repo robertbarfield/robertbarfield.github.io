@@ -129,7 +129,6 @@ src: url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
 .featurette-image.pull-right {margin-left: 10px;}
 .featurette-heading {font-size: 30px;}
 .hero-subhead { font-size:32px; }
-.standard-button { margin-top:12px; }
 }
 
 @media (max-width: 768px) {
@@ -138,6 +137,7 @@ src: url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
 .featurette-divider {margin: 40px 0;}
 .featurette-heading {font-size: 25px;}
 .hero-subhead { font-size:28px; }
+.standard-button { margin-top:12px; }
 }
 
 
