@@ -2,11 +2,11 @@ body { background-color: #300c54; font-family:arial;}
 
 @font-face {
   font-family: 'Hero';
-  src: url('fonts/hero.eot'); /* IE9 Compat Modes */
-  src: url('fonts/hero.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/hero.woff') format('woff'), /* Modern Browsers */
-       url('fonts/hero.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/hero.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('fonts/Hero.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Hero.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Hero.woff') format('woff'), /* Modern Browsers */
+       url('fonts/Hero.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Hero.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 .header-image { position:relative; }
