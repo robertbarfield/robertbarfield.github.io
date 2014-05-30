@@ -159,12 +159,14 @@ src: url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
 .headline > .container > h2 {font-size: 30px;}
 .hero-subhead { font-size:21px; }
 
+.hero-mini { display:block; }
+.hero-img { display:none; }
+
 }
 
 @media (max-width: 475px) {
 
-.hero-mini { display:block; }
-.hero-img { display:none; }
+
 
 }
 
