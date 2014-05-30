@@ -95,7 +95,7 @@ src: url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
 
 }
 
-.social-icons { padding:0px !important;}
+.social-icons { padding:12px 0 0 0 !important;}
 
 .social-icons li {
     display: inline-block;
