@@ -17,6 +17,7 @@ function register($form) {
 	
 	$('form input').hide();
 	$('form button').hide();
+	$('#capsuleTagline').hide();
 	
 	console.log($form);
 	

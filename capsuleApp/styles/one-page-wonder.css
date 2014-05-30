@@ -11,6 +11,7 @@ body { background-color: #300c54; font-family:arial;}
 
 .header-image { position:relative; }
 .hero-img { width:100%; height:auto;vertical-align:top;}
+.hero-mini { width:100%; height:auto;vertical-align:top;display:none;}
 .hero-subhead { position:absolute;padding:0.25% 12px;width:100%;bottom:0px;text-align:center;z-index:1;font-size:34px;color:#4e2a74;font-family:hero;background-image:url('../images/subhead-bkgrnd.png'); }
 
 .standard-button { background: #7dc241; border:none; color:#fff; font-size:16px;font-weight:normal;}
@@ -136,6 +137,7 @@ src: url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
 .container {margin: 0 15px;}
 .featurette-divider {margin: 40px 0;}
 .featurette-heading {font-size: 25px;}
+.standard-button { margin-top:12px; }
 .hero-subhead { font-size:28px; position:relative; background-color:#fff;}
 
 }
@@ -155,11 +157,14 @@ src: url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
 .headline {padding: 75px 0 25px 0;}
 .headline > .container > h1 {font-size: 60px;}
 .headline > .container > h2 {font-size: 30px;}
-.standard-button { margin-top:12px; }
 .hero-subhead { font-size:21px; }
+
 }
 
 @media (max-width: 475px) {
+
+.hero-mini { display:block; }
+.hero-img { display:none; }
 
 }
 
